@@ -3,7 +3,7 @@ export default [
     name: 'avocado',
     icon: '🍐',
     price: 100,
-    quantity: -1,
+    quantity: 1,
   },
   {
     name: 'cherry',
