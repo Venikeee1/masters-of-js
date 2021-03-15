@@ -1,0 +1,16 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.gallery {
+  display: flex;
+}
+
+.img {
+  max-width: 100%;
+}
