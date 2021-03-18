@@ -1,12 +1,18 @@
-import _ from 'lodash';
+import '../css/styles.scss';
+import 'swiper/swiper.min.css';
+import 'swiper/components/effect-fade/effect-fade.min.css';
+import Swiper from 'swiper';
+// import svg from '../img/banjo.svg';
 
-function component() {
-  const element = document.createElement('div');
+// const galleryIconRef = document.querySelector('.gallery-icon');
+// galleryIconRef.innerHTML = svg;
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack Hello webpack Hello'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+const swiper = new Swiper('.swiper-container', {
+  speed: 400,
+  // spaceBetween: 100,
+  effect: 'fade',
+  slidesPerView: 1,
+  fadeEffect: {
+    crossFade: true,
+  },
+});

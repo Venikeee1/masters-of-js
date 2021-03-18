@@ -1,0 +1,49 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.gallery {
+  display: flex;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.box {
+  color: #fff;
+}
+
+.svg {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+  stroke-dasharray: 500 500;
+  stroke-width: 1px;
+  stroke: green;
+  animation: svgAnimation 4s infinite alternate;
+  fill: none;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+@keyframes svgAnimation {
+  0% {
+    stroke-dasharray: 500 500;
+  }
+
+  100% {
+    stroke-dasharray: 0 500;
+  }
+}
