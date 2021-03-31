@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .paragraph {
+        transition: opacity 0.7s, transform 0.7s;
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .paragraph.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .side-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 50px;
+        width: 400px;
+        height: 100%;
+        background: purple;
+        color: #fff;
+        transform: translateX(-100%);
+      }
+
+      .side-bar.open {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>New Project <button class="open-menu">Open menu</button></h1>
+      <header>
+        <div class="logo">Logo</div>
+        <nav class="nav">
+          <a href="" class="link">Link 1</a>
+          <a href="" class="link">Link 2</a>
+          <a href="" class="link">Link 3</a>
+          <a href="" class="link">Link 4</a>
+          <a href="" class="link">Link 5</a>
+        </nav>
+        <aside class="side-bar">side bar</aside>
+        <div class="text">
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga
+            ipsum perferendis cumque at harum quasi ut illo, placeat nam
+            quibusdam, atque, corporis optio repellat laborum nesciunt non porro
+            doloremque nulla similique? Perspiciatis harum temporibus, iste ipsa
+            expedita corporis ut a ipsam dignissimos consequatur tempora
+            inventore qui saepe natus quod! Veritatis fugiat totam quas aut
+            illum ea, nobis odit dolorem quaerat, impedit ex incidunt, esse
+            vitae hic! Accusantium illo rem enim labore esse soluta repellendus,
+            veniam, impedit reiciendis temporibus vitae vero adipisci numquam
+            neque quisquam iure maiores distinctio explicabo! Molestias neque
+            quis, laborum ducimus consequatur quia ea soluta sunt vitae!
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga
+            ipsum perferendis cumque at harum quasi ut illo, placeat nam
+            quibusdam, atque, corporis optio repellat laborum nesciunt non porro
+            doloremque nulla similique? Perspiciatis harum temporibus, iste ipsa
+            expedita corporis ut a ipsam dignissimos consequatur tempora
+            inventore qui saepe natus quod! Veritatis fugiat totam quas aut
+            illum ea, nobis odit dolorem quaerat, impedit ex incidunt, esse
+            vitae hic! Accusantium illo rem enim labore esse soluta repellendus,
+            veniam, impedit reiciendis temporibus vitae vero adipisci numquam
+            neque quisquam iure maiores distinctio explicabo! Molestias neque
+            quis, laborum ducimus consequatur quia ea soluta sunt vitae!
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga
+            ipsum perferendis cumque at harum quasi ut illo, placeat nam
+            quibusdam, atque, corporis optio repellat laborum nesciunt non porro
+            doloremque nulla similique? Perspiciatis harum temporibus, iste ipsa
+            expedita corporis ut a ipsam dignissimos consequatur tempora
+            inventore qui saepe natus quod! Veritatis fugiat totam quas aut
+            illum ea, nobis odit dolorem quaerat, impedit ex incidunt, esse
+            vitae hic! Accusantium illo rem enim labore esse soluta repellendus,
+            veniam, impedit reiciendis temporibus vitae vero adipisci numquam
+            neque quisquam iure maiores distinctio explicabo! Molestias neque
+            quis, laborum ducimus consequatur quia ea soluta sunt vitae!
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga
+            ipsum perferendis cumque at harum quasi ut illo, placeat nam
+            quibusdam, atque, corporis optio repellat laborum nesciunt non porro
+            doloremque nulla similique? Perspiciatis harum temporibus, iste ipsa
+            expedita corporis ut a ipsam dignissimos consequatur tempora
+            inventore qui saepe natus quod! Veritatis fugiat totam quas aut
+            illum ea, nobis odit dolorem quaerat, impedit ex incidunt, esse
+            vitae hic! Accusantium illo rem enim labore esse soluta repellendus,
+            veniam, impedit reiciendis temporibus vitae vero adipisci numquam
+            neque quisquam iure maiores distinctio explicabo! Molestias neque
+            quis, laborum ducimus consequatur quia ea soluta sunt vitae!
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga
+            ipsum perferendis cumque at harum quasi ut illo, placeat nam
+            quibusdam, atque, corporis optio repellat laborum nesciunt non porro
+            doloremque nulla similique? Perspiciatis harum temporibus, iste ipsa
+            expedita corporis ut a ipsam dignissimos consequatur tempora
+            inventore qui saepe natus quod! Veritatis fugiat totam quas aut
+            illum ea, nobis odit dolorem quaerat, impedit ex incidunt, esse
+            vitae hic! Accusantium illo rem enim labore esse soluta repellendus,
+            veniam, impedit reiciendis temporibus vitae vero adipisci numquam
+            neque quisquam iure maiores distinctio explicabo! Molestias neque
+            quis, laborum ducimus consequatur quia ea soluta sunt vitae!
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga
+            ipsum perferendis cumque at harum quasi ut illo, placeat nam
+            quibusdam, atque, corporis optio repellat laborum nesciunt non porro
+            doloremque nulla similique? Perspiciatis harum temporibus, iste ipsa
+            expedita corporis ut a ipsam dignissimos consequatur tempora
+            inventore qui saepe natus quod! Veritatis fugiat totam quas aut
+            illum ea, nobis odit dolorem quaerat, impedit ex incidunt, esse
+            vitae hic! Accusantium illo rem enim labore esse soluta repellendus,
+            veniam, impedit reiciendis temporibus vitae vero adipisci numquam
+            neque quisquam iure maiores distinctio explicabo! Molestias neque
+            quis, laborum ducimus consequatur quia ea soluta sunt vitae!
+          </p>
+        </div>
+      </header>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
