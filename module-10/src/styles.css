@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * CSS image reference example.
+   */
+  background-image: url('./images/bg-pattern.png');
+}
+
+.side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: purple;
+  color: #fff;
+  padding: 100px 60px;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  transform: translateX(-100%);
+}
+
+.side-bar.active {
+  transform: translateX(0);
+}
+
+.side-bar__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar__link {
+  color: inherit;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.x-mark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.x-mark::before {
+  content: '';
+  display: inline-block;
+  background: #fff;
+  width: 20px;
+  height: 2px;
+  transform: rotate(45deg);
+}
+
+.x-mark::after {
+  position: absolute;
+  top: 16px;
+  left: 5px;
+  content: '';
+  display: inline-block;
+  background: #fff;
+  width: 20px;
+  height: 2px;
+  transform: rotate(-45deg);
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+}
+
+.burger__line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin: 2px 0;
+}
+
+.days {
+  font-size: 28px;
+}
+
+.hours {
+  font-size: 24px;
+}
+
+.minutes {
+  font-size: 20px;
+}
+
+.seconds {
+  font-size: 16px;
+}
