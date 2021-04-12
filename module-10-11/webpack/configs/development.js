@@ -4,7 +4,7 @@ const paths = require('../utils/paths');
 module.exports = env => ({
   devtool: 'cheap-eval-source-map',
   output: {
-    filename: '[name].js',
+    filename: '[name]-chunk.js',
   },
   module: {
     rules: [
@@ -21,10 +21,12 @@ module.exports = env => ({
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
       template: './about-us.html',
       filename: 'about-us.html',
+      chunks: ['aboutUs'],
     }),
   ],
   devServer: {

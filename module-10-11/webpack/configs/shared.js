@@ -12,7 +12,10 @@ Handlebars.registerHelper('times', function (n, block) {
 module.exports = env => ({
   mode: env.mode,
   context: paths.SRC_DIR,
-  entry: './index.js',
+  entry: {
+    main: './index.js',
+    aboutUs: './about-us.js',
+  },
   output: {
     path: paths.BUILD_DIR,
   },

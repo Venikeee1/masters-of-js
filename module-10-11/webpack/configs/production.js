@@ -40,6 +40,7 @@ module.exports = env => ({
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      chunks: ['main'],
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -49,9 +50,11 @@ module.exports = env => ({
         useShortDoctype: true,
       },
     }),
+
     new HtmlWebpackPlugin({
       template: './about-us.html',
       filename: 'about-us.html',
+      chunks: ['aboutUs'],
       minify: {
         collapseWhitespace: true,
         removeComments: true,
