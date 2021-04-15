@@ -1,5 +1,4 @@
 .apartments-list {
-  max-width: 900px;
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr;
@@ -13,4 +12,14 @@
 
 .apartment__text {
   padding: 20px;
+}
+
+.apartment__delete-btn {
+  background: red;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 15px;
+  cursor: pointer;
 }

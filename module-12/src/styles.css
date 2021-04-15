@@ -19,6 +19,31 @@ body {
   background-image: url('./images/bg-pattern.png');
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-apartment-btn {
+  background: rgb(93, 179, 93);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: none;
+}
+
 .side-bar {
   position: fixed;
   left: 0;
