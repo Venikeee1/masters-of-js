@@ -1,0 +1,42 @@
+.preloader {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s;
+}
+
+.preloader.disable {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader__icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid purple;
+  animation: preloader 3s infinite;
+}
+
+@keyframes preloader {
+  0% {
+    border-radius: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    border-radius: 50%;
+    transform: rotate(720deg);
+  }
+
+  100% {
+    border-radius: 0;
+    transform: rotate(0);
+  }
+}

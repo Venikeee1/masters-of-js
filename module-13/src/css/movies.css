@@ -1,0 +1,15 @@
+.movies-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.movie-card {
+  box-shadow: 0px 2px 8px 0px rgba(208, 108, 219, 0.2);
+  padding: 20px;
+}
+
+.movie-card__poster {
+  max-width: 100%;
+  display: block;
+}
