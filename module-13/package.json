@@ -48,6 +48,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "chokidar": "^3.5.1",
     "core-js": "^3.6.5",
     "gsap": "^3.6.0",

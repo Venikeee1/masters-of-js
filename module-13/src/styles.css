@@ -32,3 +32,24 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+.btn {
+  background: purple;
+  padding: 8px 15px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.current-page {
+  text-align: center;
+}

@@ -2,6 +2,7 @@ import preloaderFactory from '../preloader';
 import moviesService from '../services/movies.service';
 import moviesListTemplate from '../../templates/moviesList.hbs';
 import debounce from 'lodash.debounce';
+import { movieAdapter } from '../movieAdapter';
 import '../../css/movies.css';
 
 const preloader = preloaderFactory('.preloader');
@@ -35,14 +36,7 @@ class Movies {
   }
 
   renderMovies() {
-    const moviesWithPosterPath = this.movies.map(movie => {
-      return {
-        title: movie.original_title,
-        rating: movie.vote_average,
-        posterPath: `https://www.themoviedb.org/t/p/w500${movie.poster_path}`,
-        description: movie.overview,
-      };
-    });
+    const moviesWithPosterPath = this.movies.map(movie => movieAdapter(movie));
     const moviesList = moviesListTemplate(moviesWithPosterPath);
 
     this.element.innerHTML = moviesList;

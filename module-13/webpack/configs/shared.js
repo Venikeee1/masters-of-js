@@ -14,7 +14,7 @@ module.exports = env => ({
   context: paths.SRC_DIR,
   entry: {
     main: './index.js',
-    aboutUs: './about-us.js',
+    topRated: './top-rated.js',
   },
   output: {
     path: paths.BUILD_DIR,

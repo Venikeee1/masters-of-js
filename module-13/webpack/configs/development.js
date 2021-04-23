@@ -24,9 +24,9 @@ module.exports = env => ({
       chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
-      template: './about-us.html',
-      filename: 'about-us.html',
-      chunks: ['aboutUs'],
+      template: './top-rated.html',
+      filename: 'top-rated.html',
+      chunks: ['topRated'],
     }),
   ],
   devServer: {
